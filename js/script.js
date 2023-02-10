@@ -1,7 +1,7 @@
 
 const sections = document.querySelectorAll(".section");
 const allLink = document.querySelectorAll(".nav__link");
-
+const menu = document.querySelector('.nav__list');
 
 
 
@@ -10,22 +10,37 @@ const observer = new IntersectionObserver( (entries) => {
 		if(entry.isIntersecting){
             allLink.forEach(link => {
                 link.classList.remove('nav__active')
-                const linkHref = link.getAttribute("href")
-                console.log(linkHref)
+                const linkHref = link.getAttribute("href").replace('#', '')
                 if(linkHref == entry.target.id){
-                    alert('f')
                     link.classList.add('nav__active')
                 }
             })
-            console.log(entry.target.id)
         } 
 
 	});
+},{
+    threshold: 0.7,
+});
+sections.forEach( section => {
+    observer.observe( section );
+})
+
+
+// функция плавного скрола
+menu.addEventListener('click', (e) => {
+    if(e.target.classList.contains('nav__link')){
+        e.preventDefault();
+        
+    const idElement = e.target.getAttribute('href').replace('#', '')
+
+        window.scrollTo({
+            top: document.getElementById(idElement).offsetTop,
+            left: 0,
+            behavior: 'smooth'
+          })
+    }
 })
 
 
  
 
-sections.forEach( section => {
-    observer.observe( section );
-})
