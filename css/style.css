@@ -1,0 +1,96 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav {
+    position: relative;
+    border-right: 1px solid rgb(205, 175, 175);
+    width: 300px;
+    padding: 0 10px;
+}
+.nav__wrapper {
+    position: sticky;
+    left: 0;
+    top: 10%;
+}
+/* ---prigress bar */
+.progress{
+    width: 100%;
+    position: relative;
+    height: 10px;
+    border-radius: 30px;
+    background-color: blueviolet;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.progress__bar{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 20%;
+    border-radius: 30px;
+    background-color: blue;
+    transition: all 0.3s ease;
+}
+/* ----nav list */
+.nav__list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.nav__item {
+    border: 1px solid rgb(205, 175, 175);
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.nav__link {
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+.nav__active {
+    background-color: bisque;
+}
+/* --------- */
+.main {
+    width: 100%;
+}
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
+.section-1 {
+    background-color: azure;
+}
+.section-2 {
+    background-color: rgb(141, 214, 214);
+}
+.section-3 {
+    background-color: rgb(187, 230, 201);
+}
+.section-4 {
+    background-color: rgb(229, 241, 176);
+}
+.section-5 {
+    background-color: rgb(206, 188, 252);
+}
