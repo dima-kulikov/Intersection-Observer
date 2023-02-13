@@ -85,25 +85,25 @@ box-sizing: border-box;
 }
 
 .section-1 {
-    background-image: url("/img/bg-1.png");
+    background-image: url("../img/bg-1.png");
 }
 
 .section-2 {
     /* background-color: rgb(130, 194, 194); */
-    background-image: url("/img/bg-2.jpg");
+    background-image: url("../img/bg-2.jpg");
 
 }
 .section-3 {
     /* background-color: rgb(187, 230, 201); */
-    background-image: url("/img/bg-3.jpg");
+    background-image: url("../img/bg-3.jpg");
 }
 .section-4 {
     /* background-color: rgb(229, 241, 176); */
-    background-image: url("/img/bg-4.jpg");
+    background-image: url("../img/bg-4.jpg");
 }
 .section-5 {
     /* background-color: rgb(206, 188, 252); */
-    background-image: url("/img/bg-5.jpg");
+    background-image: url("../img/bg-5.jpg");
 }
 .hello{
     position: absolute;
